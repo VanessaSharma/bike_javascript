@@ -23,7 +23,6 @@
 // npm install browser-sync --save-dev
 // npm install gulp-sass gulp-sourcemaps --save-dev
 
-var lib = require('bower-files')();
 var del = require('del');
 var utilities = require('gulp-util');
 var uglify = require('gulp-uglify');
@@ -36,6 +35,17 @@ var lib = require('bower-files')();
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
+var lib = require('bower-files')({
+  "overrides":{
+    "bootstrap" : {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  }
+});
 var buildProduction = utilities.env.production;
 
 gulp.task('cssBuild', function() {
@@ -76,19 +86,6 @@ gulp.task('htmlBuild', function() {
   browserSync.reload();
 });
 
-
-
-var lib = require('bower-files')({
-  "overrides":{
-    "bootstrap" : {
-      "main": [
-        "less/bootstrap.less",
-        "dist/css/bootstrap.css",
-        "dist/js/bootstrap.js"
-      ]
-    }
-  }
-});
 
 gulp.task('build', ['clean'], function(){
   if (buildProduction) {

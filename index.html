@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="build/css/vendor.css">
-    <link rel="stylesheet" href="build/css/styles.css">
-    <script src="build/js/vendor.min.js"></script>
-    <script type="text/javascript" src="build/js/app.js"></script>
-    <title></title>
-  </head>
+<head>
+  <link rel="stylesheet" href="build/css/vendor.css">
+  <script src="build/js/vendor.min.js"></script>
+  <script type="text/javascript" src="build/js/app.js"></script>
+  <title>Bike Lost & Found</title>
+</head>
   <body>
+    <div class="jumbotron">
+      <br>
+      <br>
+      <p>    Welcome to the</p>
+      <br>
+      <br>
+      <p>            TriCounty Bike Lost & Found</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    <hr>
+    <div class="bar">
+      <br>
+    </div>
+    <hr>
     <div class="container">
+      <form id="register">
+        <h3>New User Form</h3>
+        <fieldset>
+          <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your Email Address" type="email" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Username" type="text" tabindex="3" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Enter Password" type="text" tabindex="4" required>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" id="register-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+      </form>
+      <form id="signin">
+        <h3>Sign-In</h3>
+        <fieldset>
+          <input placeholder="Username" type="text" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Enter Password" type="text" required>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" id="signin-submit" data-submit="/bike.html">Submit</button>
+        </fieldset>
+      </form>
       <h3>Well look at the time! </h3>
       <h3 id="time"></h3>
     </div>
