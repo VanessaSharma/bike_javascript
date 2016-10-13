@@ -1,16 +1,18 @@
 var bike = require('./../js/bike.js').bikeModule;
 
-$(document).ready(function(){
-  var newbike = new Bike();
+var displayColor = function(bike, color) {
 
-$("form").submit(function(event) {
-  event.preventDefault();
-  var title = $('#title').val();
-  var description = $('#description').val();
-  var image = $('#image').val();
-  var lastSeen = $('#lastSeen').val();
-  var model = $('#model').val();
+};
+$(document).ready(function() {
+  $("#bike-list").click(function(event) {
+    event.preventDefault();
+
+{
 }
+});
+});
+
+
 
 
 

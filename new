@@ -1,0 +1,11 @@
+$("form").submit(function(event) {
+  event.preventDefault();
+  var title = $('#title').val();
+  var description = $('#description').val();
+  var image = $('#image').val();
+  var lastSeen = $('#lastSeen').val();
+  var model = $('#model').val();
+  });
+});
+
+  var newbike = new Bike();

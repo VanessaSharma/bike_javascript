@@ -7,4 +7,4 @@ function Signup(name, email, username, password) {
 
 Signup.prototype.getSignup = function(name, email, username, password) {
 
-}
+};
